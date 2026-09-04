@@ -238,12 +238,20 @@ def diagram_architecture():
     b.append(arrow(x0 + w / 2, 766, x0 + w / 2, 796, color=MUTED, width=1.3))
 
     # Storage
-    b.append(band(x0, 800, w, 56, fill=PANEL))
-    b.append(text(x0 + 20, 834, "PostgreSQL", size=14, fill=TEXT, weight="600"))
-    b.append(text(x0 + 130, 834,
+    b.append(band(x0, 796, w, 54, fill=PANEL))
+    b.append(text(x0 + 20, 828, "PostgreSQL", size=14, fill=TEXT, weight="600"))
+    b.append(text(x0 + 130, 828,
                   "stored computed fields · trigram indexes on plate & car name · "
                   "SQL uniqueness on mechanic name",
                   size=12, fill=MUTED, mono=True))
+
+    # operating context
+    b.append(text(x0, 876,
+                  "Operating context — car workshop in Purwokerto, Central Java. "
+                  "Grew from pandemic-era mobile home service (2021) into a fixed "
+                  "shop running ~400–450 service units/month for 350+ regular "
+                  "customers.",
+                  size=11.5, fill=MUTED, opacity=0.85))
 
     return W, H, svg(W, H, b,
                      "Pitcar Service Management System — Architecture",

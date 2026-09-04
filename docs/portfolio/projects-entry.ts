@@ -21,7 +21,7 @@
   id: "pitcar",
   title: "Pitcar Service Management System",
   description:
-    "An Odoo 16 ERP implementation for a car repair workshop, centred on a custom addon that turns a generic sales order into a service order — one record carrying the car, mechanic team, service advisor, invoice and post-service follow-up from the moment the car rolls in.",
+    "An Odoo 16 ERP implementation for a car workshop in Purwokerto that grew from pandemic-era mobile home service into a 400+ unit/month operation. A custom addon turns a generic sales order into a service order — one record carrying the car, mechanic team, service advisor, invoice and post-service follow-up from the moment the car rolls in.",
   image: {
     src: "/projects/pitcar-preview.webp",
     alt: "Pitcar project preview",
@@ -66,10 +66,10 @@
     {
       title: "Problem",
       bullets: [
-        "Odoo models customers, products and orders — but not the car. Without the vehicle as a first-class entity, service history for a returning customer was guesswork.",
+        "The business scales on the car, not the counter — it began as mobile home service, so the same vehicle comes back, gets collected, and is due again at intervals. Odoo models customers, products and orders, but not the car, so service history for a returning customer was guesswork.",
         "The car, odometer, assigned mechanics and service advisor had to be re-typed on the quotation, the parts picking, the work order and the invoice — four chances for the same visit to disagree with itself.",
-        "Follow-up after a service was not data. Whether a customer was called, reminded at the 3- and 6-month intervals, or rebooked could not be measured.",
-        "The company needed a system that could be handed over — there was no plan for a permanent in-house engineering team, so anything exotic would have become a liability.",
+        "Follow-up was not data. Whether a customer was called, reminded at the 3- and 6-month service intervals, or rebooked could not be measured — for a shop running on 350+ repeat customers, the most valuable information in the building.",
+        "It had to be handed over and replicated. There was no permanent in-house engineering team, and the business was heading toward a franchise model where the operational system is part of what a new outlet buys — so anything exotic would have been a liability.",
       ],
     },
     {
@@ -96,13 +96,15 @@
         "Replaced fragmented operational tooling with one Odoo instance covering sales, service, inventory, invoicing and customer management.",
         "Made service history queryable — every visit attached to a specific car, with mechanic team, advisor, odometer and outcome attached to it.",
         "Turned follow-up into data: contact, response and rebooking rates at 3 days, 3 months and 6 months became ordinary group-by queries instead of an off-system process.",
-        "Supported operations at around 400+ service units per month.",
-        "Handed the system over running and maintainable — every customisation is a standard Odoo override, readable by any Odoo developer without tribal knowledge.",
+        "Supported operations at roughly 400–450 service units per month against a base of 350+ regular customers.",
+        "The ERP layer this work established is now part of how the company publicly positions itself — cited alongside dealer-standard operations as what separates it from the 2021 home-service original — and the computerised operational system forms part of what franchise partners buy.",
+        "The 'must be handed over, must be replicable' constraint proved to be the right thing to optimise for: every customisation is a standard Odoo override, readable by any Odoo developer without tribal knowledge, and the system outlived my involvement.",
       ],
     },
   ],
   links: [
     { label: "Company Website", url: "https://pitcar.co.id" },
+    { label: "Franchise Programme", url: "https://franchise.pitcar.co.id" },
     {
       label: "Archived Code Snapshot",
       url: "https://github.com/ucencode/odoo-pitcar",

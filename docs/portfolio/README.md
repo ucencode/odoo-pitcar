@@ -40,8 +40,20 @@ them in one place and re-run.
 
 ## A note on claims
 
-Statements about the code (field counts, indexes, overridden hooks, constraints,
-report bindings, ACL rows) are checkable against `pitcar_custom/`. Statements
-about scale and business outcome — the 400+ service units per month figure —
-come from the existing site copy and are yours to stand behind; they are not
-derived from this repository.
+**Code claims** — field counts, indexes, overridden hooks, constraints, report
+bindings, ACL rows, dependencies, timeline — are checkable against
+`pitcar_custom/` and `git log` in this repository.
+
+**Business claims** — the 2021 home-service origin, service mix, 400–450 units
+per month, 350+ regular customers, the ERP as public positioning, and the
+franchise programme — come from the client's own public site
+([tentang](https://pitcar.co.id/tentang/), [layanan](https://pitcar.co.id/layanan/),
+[kemitraan](https://pitcar.co.id/kemitraan/),
+[franchise.pitcar.co.id](https://franchise.pitcar.co.id/)). They are the
+client's marketing claims, cited as context — not measurements taken from the
+system, and not evidence that a given number was caused by this code.
+
+**Scope boundary.** The contribution in this repository ends at the ownership
+transfer in October 2024. The system as marketed today reflects continued
+development after that point on the client's side. The write-up says so
+explicitly; keep that line if you trim elsewhere.
