@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6"
+            markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrow_dim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6"
+            markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#768393"/>
+    </marker>
+    <marker id="arrow_info" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6"
+            markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5b9dd9"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#0b0e13"/>
+  <text x="60" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="30" fill="#e8ebee" font-weight="700" text-anchor="start" opacity="1.0">Feedback &amp; Follow-up Engine</text>
+  <text x="60" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="15" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">One billing timestamp expands into a 3-day, 3-month and 6-month retention workflow that the service advisor works off a saved filter.</text>
+  <text x="60" y="132" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#10b981" font-weight="400" text-anchor="start" opacity="1.0" letter-spacing="1.4">TRIGGER</text>
+  <rect x="60" y="146" width="320" height="104" rx="10" fill="#14171f" stroke="#10b981" stroke-width="1" opacity="1.0"/>
+  <rect x="60" y="146" width="4" height="104" rx="2" fill="#10b981"/>
+  <text x="76" y="171" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">date_completed</text>
+  <text x="76" y="194" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">set by _create_invoices()</text>
+  <text x="76" y="212" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">the moment the car is billed</text>
+  <text x="76" y="238" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="0.8">one timestamp drives every reminder below</text>
+  <path d="M 382 198 L 452 198" stroke="#10b981" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+  <text x="460" y="132" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#10b981" font-weight="400" text-anchor="start" opacity="1.0" letter-spacing="1.4">STORED COMPUTED WINDOWS (@API.DEPENDS ON DATE_COMPLETED)</text>
+  <rect x="460.0" y="146" width="349.3333333333333" height="104" rx="10" fill="#14171f" stroke="#10b981" stroke-width="1" opacity="1.0"/>
+  <text x="476.0" y="176" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="17" fill="#10b981" font-weight="700" text-anchor="start" opacity="1.0">+3 days</text>
+  <text x="476.0" y="200" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#e8ebee" font-weight="400" text-anchor="start" opacity="1.0">next_follow_up_3_days</text>
+  <text x="476.0" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">did the repair hold?</text>
+  <text x="476.0" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="10.5" fill="#768393" font-weight="400" text-anchor="start" opacity="0.8">+ notif_… human-readable label</text>
+  <path d="M 634.6666666666666 252 L 634.6666666666666 282" stroke="#10b981" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <rect x="825.3333333333333" y="146" width="349.3333333333333" height="104" rx="10" fill="#14171f" stroke="#10b981" stroke-width="1" opacity="1.0"/>
+  <text x="841.3333333333333" y="176" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="17" fill="#10b981" font-weight="700" text-anchor="start" opacity="1.0">+90 days</text>
+  <text x="841.3333333333333" y="200" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#e8ebee" font-weight="400" text-anchor="start" opacity="1.0">next_follow_up_3_months</text>
+  <text x="841.3333333333333" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">service interval nudge</text>
+  <text x="841.3333333333333" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="10.5" fill="#768393" font-weight="400" text-anchor="start" opacity="0.8">+ notif_… human-readable label</text>
+  <path d="M 999.9999999999999 252 L 999.9999999999999 282" stroke="#10b981" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <rect x="1190.6666666666665" y="146" width="349.3333333333333" height="104" rx="10" fill="#14171f" stroke="#10b981" stroke-width="1" opacity="1.0"/>
+  <text x="1206.6666666666665" y="176" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="17" fill="#10b981" font-weight="700" text-anchor="start" opacity="1.0">+180 days</text>
+  <text x="1206.6666666666665" y="200" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#e8ebee" font-weight="400" text-anchor="start" opacity="1.0">next_follow_up_6_months</text>
+  <text x="1206.6666666666665" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">second interval nudge</text>
+  <text x="1206.6666666666665" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="10.5" fill="#768393" font-weight="400" text-anchor="start" opacity="0.8">+ notif_… human-readable label</text>
+  <path d="M 1365.3333333333333 252 L 1365.3333333333333 282" stroke="#10b981" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <rect x="460" y="286" width="1080" height="92" rx="14" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="480" y="312" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#10b981" font-weight="400" text-anchor="start" opacity="1.0" letter-spacing="1.4">SAVED SEARCH FILTERS ON THE SALE.ORDER LIST</text>
+  <text x="480" y="340" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="13" fill="#e8ebee" font-weight="400" text-anchor="start" opacity="1.0">&quot;Reminder 3 Days — Hari ini&quot;    ·    &quot;Reminder 3 Bulan — Hari ini&quot;    ·    &quot;Reminder 6 Bulan — Hari ini&quot;</text>
+  <text x="480" y="364" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">The advisor opens one saved filter and gets today&#x27;s call list. No cron, no queue, no separate reminder app to keep in sync.</text>
+  <path d="M 1000 380 L 1000 406" stroke="#10b981" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+  <text x="60" y="420" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#10b981" font-weight="400" text-anchor="start" opacity="1.0" letter-spacing="1.4">POST-SERVICE CAPTURE (DAY 0–3)</text>
+  <rect x="60" y="434" width="400" height="136" rx="10" fill="#14171f" stroke="#f0b429" stroke-width="1" opacity="1.0"/>
+  <rect x="60" y="434" width="4" height="136" rx="2" fill="#f0b429"/>
+  <text x="76" y="459" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">is_willing_to_feedback</text>
+  <text x="76" y="482" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">no  → no_feedback_reason, and the</text>
+  <text x="76" y="499" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">     rating / satisfaction / tag</text>
+  <text x="76" y="516" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">     fields are cleared on change</text>
+  <text x="76" y="533" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">yes → continue to rating</text>
+  <path d="M 462 502 L 512 502" stroke="#768393" stroke-width="1.5" fill="none" marker-end="url(#arrow_dim)"/>
+  <rect x="512" y="434" width="440" height="136" rx="10" fill="#14171f" stroke="#f0b429" stroke-width="1" opacity="1.0"/>
+  <rect x="512" y="434" width="4" height="136" rx="2" fill="#f0b429"/>
+  <text x="528" y="459" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">customer_rating  1 – 5</text>
+  <text x="528" y="482" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">1 → very_dissatisfied     4 → satisfied</text>
+  <text x="528" y="499" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">2 → dissatisfied          5 → very_satisfied</text>
+  <text x="528" y="516" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">3 → neutral</text>
+  <text x="528" y="533" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">mapped in onchange, create() and write()</text>
+  <text x="528" y="558" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="0.8">satisfaction is readonly — derived, never typed by hand</text>
+  <path d="M 954 502 L 1004 502" stroke="#768393" stroke-width="1.5" fill="none" marker-end="url(#arrow_dim)"/>
+  <rect x="1004" y="434" width="536" height="136" rx="10" fill="#14171f" stroke="#e05252" stroke-width="1" opacity="1.0"/>
+  <rect x="1004" y="434" width="4" height="136" rx="2" fill="#e05252"/>
+  <text x="1020" y="459" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">rating ≤ 2  →  complaint path opens</text>
+  <text x="1020" y="482" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">show_complaint_action flips true</text>
+  <text x="1020" y="499" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">complaint_action   what was done about it</text>
+  <text x="1020" y="516" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">complaint_status   solved / not solved</text>
+  <text x="1020" y="533" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">feedback_classification_ids  what went wrong</text>
+  <text x="60" y="604" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#10b981" font-weight="400" text-anchor="start" opacity="1.0" letter-spacing="1.4">REMINDER CAPTURE (MONTH 3 AND MONTH 6, SAME SHAPE)</text>
+  <rect x="60.0" y="610" width="358.0" height="122" rx="10" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <rect x="60.0" y="610" width="4" height="122" rx="2" fill="#5b9dd9"/>
+  <text x="76.0" y="638" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" fill="#5b9dd9" font-weight="600" text-anchor="start" opacity="1.0">reminder_N_months</text>
+  <text x="76.0" y="664" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">was the customer contacted at all — yes</text>
+  <text x="76.0" y="681" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">/ no, with a reason recorded when not</text>
+  <path d="M 420.0 671 L 430.0 671" stroke="#768393" stroke-width="1.4" fill="none" marker-end="url(#arrow_dim)"/>
+  <rect x="434.0" y="610" width="358.0" height="122" rx="10" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <rect x="434.0" y="610" width="4" height="122" rx="2" fill="#5b9dd9"/>
+  <text x="450.0" y="638" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" fill="#5b9dd9" font-weight="600" text-anchor="start" opacity="1.0">is_response_N_months</text>
+  <text x="450.0" y="664" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">did they answer, and what did they say</text>
+  <text x="450.0" y="681" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">(feedback_N_months)</text>
+  <path d="M 794.0 671 L 804.0 671" stroke="#768393" stroke-width="1.4" fill="none" marker-end="url(#arrow_dim)"/>
+  <rect x="808.0" y="610" width="358.0" height="122" rx="10" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <rect x="808.0" y="610" width="4" height="122" rx="2" fill="#5b9dd9"/>
+  <text x="824.0" y="638" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" fill="#5b9dd9" font-weight="600" text-anchor="start" opacity="1.0">category_N_months</text>
+  <text x="824.0" y="664" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">tagged with feedback.classification</text>
+  <text x="824.0" y="681" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">through a dedicated m2m relation table</text>
+  <text x="824.0" y="698" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">per window</text>
+  <path d="M 1168.0 671 L 1178.0 671" stroke="#768393" stroke-width="1.4" fill="none" marker-end="url(#arrow_dim)"/>
+  <rect x="1182.0" y="610" width="358.0" height="122" rx="10" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <rect x="1182.0" y="610" width="4" height="122" rx="2" fill="#5b9dd9"/>
+  <text x="1198.0" y="638" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12.5" fill="#5b9dd9" font-weight="600" text-anchor="start" opacity="1.0">is_booking_N_months</text>
+  <text x="1198.0" y="664" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">did the reminder convert — and if so,</text>
+  <text x="1198.0" y="681" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">booking_date_N_months</text>
+  <rect x="60" y="756" width="1480" height="92" rx="10" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="76" y="782" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#10b981" font-weight="400" text-anchor="start" opacity="1.0" letter-spacing="1.4">THE POINT</text>
+  <text x="76" y="808" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="12.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">Follow-up is the part of a service business that usually lives outside the system — a notebook, a spreadsheet, a chat thread. Modelling it as fields on the order that already</text>
+  <text x="76" y="830" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="12.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">exists makes contact rate, response rate and rebooking rate ordinary group-by queries on sale.order, with nothing to reconcile between two systems.</text>
+</svg>

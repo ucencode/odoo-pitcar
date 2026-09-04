@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6"
+            markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrow_dim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6"
+            markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#768393"/>
+    </marker>
+    <marker id="arrow_info" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6"
+            markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5b9dd9"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#0b0e13"/>
+  <text x="60" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="30" fill="#e8ebee" font-weight="700" text-anchor="start" opacity="1.0">Service Order Lifecycle — from arrival to follow-up</text>
+  <text x="60" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="15" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">One record follows the car through the workshop. Each stage hook copies the car context forward instead of re-entering it.</text>
+  <text x="60" y="132" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#10b981" font-weight="400" text-anchor="start" opacity="1.0" letter-spacing="1.4">STAGE · STANDARD ODOO SALE FLOW, EXTENDED IN PLACE</text>
+  <rect x="60.0" y="146" width="235.0" height="148" rx="10" fill="#14171f" stroke="#10b981" stroke-width="1" opacity="1.0"/>
+  <circle cx="86.0" cy="172" r="13" fill="#0d3b30" stroke="#10b981" stroke-width="1"/>
+  <text x="86.0" y="176" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#10b981" font-weight="700" text-anchor="middle" opacity="1.0">1</text>
+  <text x="108.0" y="177" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Car arrives</text>
+  <text x="76.0" y="204" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">car_arrival_time</text>
+  <text x="76.0" y="222" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">customer + car picked</text>
+  <text x="76.0" y="240" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">  (car filters the</text>
+  <text x="76.0" y="258" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">   customer, and back)</text>
+  <path d="M 296.0 220 L 307.0 220" stroke="#10b981" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+  <rect x="309.0" y="146" width="235.0" height="148" rx="10" fill="#14171f" stroke="#10b981" stroke-width="1" opacity="1.0"/>
+  <circle cx="335.0" cy="172" r="13" fill="#0d3b30" stroke="#10b981" stroke-width="1"/>
+  <text x="335.0" y="176" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#10b981" font-weight="700" text-anchor="middle" opacity="1.0">2</text>
+  <text x="357.0" y="177" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Quotation</text>
+  <text x="325.0" y="204" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">odometer reading</text>
+  <text x="325.0" y="222" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">service advisors (m2m)</text>
+  <text x="325.0" y="240" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">mechanic team (m2m)</text>
+  <text x="325.0" y="258" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">campaign source</text>
+  <path d="M 545.0 220 L 556.0 220" stroke="#10b981" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+  <rect x="558.0" y="146" width="235.0" height="148" rx="10" fill="#14171f" stroke="#10b981" stroke-width="1" opacity="1.0"/>
+  <circle cx="584.0" cy="172" r="13" fill="#0d3b30" stroke="#10b981" stroke-width="1"/>
+  <text x="584.0" y="176" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#10b981" font-weight="700" text-anchor="middle" opacity="1.0">3</text>
+  <text x="606.0" y="177" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Confirmed</text>
+  <text x="574.0" y="204" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">_action_confirm()</text>
+  <text x="574.0" y="222" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">→ stock.picking gets</text>
+  <text x="574.0" y="240" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">  car, odometer,</text>
+  <text x="574.0" y="258" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">  mechanics, advisors</text>
+  <path d="M 794.0 220 L 805.0 220" stroke="#10b981" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+  <rect x="807.0" y="146" width="235.0" height="148" rx="10" fill="#14171f" stroke="#10b981" stroke-width="1" opacity="1.0"/>
+  <circle cx="833.0" cy="172" r="13" fill="#0d3b30" stroke="#10b981" stroke-width="1"/>
+  <text x="833.0" y="176" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#10b981" font-weight="700" text-anchor="middle" opacity="1.0">4</text>
+  <text x="855.0" y="177" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Work order</text>
+  <text x="823.0" y="204" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">QWeb PDF printed</text>
+  <text x="823.0" y="222" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">car block + mechanic</text>
+  <text x="823.0" y="240" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">team on the sheet</text>
+  <text x="823.0" y="258" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">for the workshop</text>
+  <path d="M 1043.0 220 L 1054.0 220" stroke="#10b981" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+  <rect x="1056.0" y="146" width="235.0" height="148" rx="10" fill="#14171f" stroke="#10b981" stroke-width="1" opacity="1.0"/>
+  <circle cx="1082.0" cy="172" r="13" fill="#0d3b30" stroke="#10b981" stroke-width="1"/>
+  <text x="1082.0" y="176" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#10b981" font-weight="700" text-anchor="middle" opacity="1.0">5</text>
+  <text x="1104.0" y="177" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Invoiced</text>
+  <text x="1072.0" y="204" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">_create_invoices()</text>
+  <text x="1072.0" y="222" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">date_completed = now</text>
+  <text x="1072.0" y="240" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">→ account.move gets</text>
+  <text x="1072.0" y="258" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">  the same car block</text>
+  <path d="M 1292.0 220 L 1303.0 220" stroke="#10b981" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+  <rect x="1305.0" y="146" width="235.0" height="148" rx="10" fill="#14171f" stroke="#10b981" stroke-width="1" opacity="1.0"/>
+  <circle cx="1331.0" cy="172" r="13" fill="#0d3b30" stroke="#10b981" stroke-width="1"/>
+  <text x="1331.0" y="176" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#10b981" font-weight="700" text-anchor="middle" opacity="1.0">6</text>
+  <text x="1353.0" y="177" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Post-service</text>
+  <text x="1321.0" y="204" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">rating + satisfaction</text>
+  <text x="1321.0" y="222" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">feedback classification</text>
+  <text x="1321.0" y="240" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">complaint action if 1–2</text>
+  <text x="1321.0" y="258" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">follow-up clock starts</text>
+  <rect x="60" y="330" width="1480" height="214" rx="14" fill="#0f1a17" stroke="#10b981" stroke-width="1" opacity="1.0" stroke-dasharray="6 5"/>
+  <text x="80" y="358" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#10b981" font-weight="400" text-anchor="start" opacity="1.0" letter-spacing="1.4">FIELD PROPAGATION — WRITTEN ONCE ON THE ORDER, COPIED FORWARD BY OVERRIDDEN HOOKS</text>
+  <rect x="80" y="376" width="380" height="148" rx="10" fill="#14171f" stroke="#10b981" stroke-width="1" opacity="1.0"/>
+  <rect x="80" y="376" width="4" height="148" rx="2" fill="#10b981"/>
+  <text x="96" y="401" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">sale.order (source of truth)</text>
+  <text x="96" y="424" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">partner_car_id</text>
+  <text x="96" y="441" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">partner_car_odometer</text>
+  <text x="96" y="458" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">car_mechanic_id / car_mechanic_id_new</text>
+  <text x="96" y="475" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">generated_mechanic_team</text>
+  <text x="96" y="492" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">service_advisor_id</text>
+  <text x="96" y="509" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">car_arrival_time</text>
+  <rect x="484.0" y="376" width="334.6666666666667" height="148" rx="10" fill="#14171f" stroke="#5b9dd9" stroke-width="1" opacity="1.0"/>
+  <rect x="484.0" y="376" width="4" height="148" rx="2" fill="#5b9dd9"/>
+  <text x="500.0" y="401" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">stock.picking</text>
+  <text x="500.0" y="424" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">◄ _action_confirm()</text>
+  <text x="500.0" y="440.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">car, odometer, mechanics,</text>
+  <text x="500.0" y="457.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">advisors, arrival time — so the</text>
+  <text x="500.0" y="473.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">warehouse move shows which</text>
+  <text x="500.0" y="490.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">car it is for</text>
+  <path d="M 469.0 450 L 481.0 450" stroke="#5b9dd9" stroke-width="1.5" fill="none" marker-end="url(#arrow_info)"/>
+  <rect x="834.6666666666667" y="376" width="334.6666666666667" height="148" rx="10" fill="#14171f" stroke="#5b9dd9" stroke-width="1" opacity="1.0"/>
+  <rect x="834.6666666666667" y="376" width="4" height="148" rx="2" fill="#5b9dd9"/>
+  <text x="850.6666666666667" y="401" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">account.move</text>
+  <text x="850.6666666666667" y="424" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">◄ _create_invoices()</text>
+  <text x="850.6666666666667" y="440.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">same block + quotation date and</text>
+  <text x="850.6666666666667" y="457.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">completed date, so finance can</text>
+  <text x="850.6666666666667" y="473.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">group revenue by car, brand</text>
+  <text x="850.6666666666667" y="490.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">and mechanic</text>
+  <path d="M 819.6666666666667 450 L 831.6666666666667 450" stroke="#5b9dd9" stroke-width="1.5" fill="none" marker-end="url(#arrow_info)"/>
+  <rect x="1185.3333333333335" y="376" width="334.6666666666667" height="148" rx="10" fill="#14171f" stroke="#5b9dd9" stroke-width="1" opacity="1.0"/>
+  <rect x="1185.3333333333335" y="376" width="4" height="148" rx="2" fill="#5b9dd9"/>
+  <text x="1201.3333333333335" y="401" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">account.move (down payment)</text>
+  <text x="1201.3333333333335" y="424" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">◄ _prepare_invoice_values()</text>
+  <text x="1201.3333333333335" y="440.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">the sale.advance.payment.inv</text>
+  <text x="1201.3333333333335" y="457.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">wizard carries car + odometer</text>
+  <text x="1201.3333333333335" y="473.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">onto down-payment invoices too</text>
+  <path d="M 1170.3333333333335 450 L 1182.3333333333335 450" stroke="#5b9dd9" stroke-width="1.5" fill="none" marker-end="url(#arrow_info)"/>
+  <text x="60" y="592" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#10b981" font-weight="400" text-anchor="start" opacity="1.0" letter-spacing="1.4">GUARD RAILS ENCODED IN THE MODEL</text>
+  <rect x="60.0" y="606" width="358.0" height="118" rx="10" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="76.0" y="634" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="13" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Readonly after confirm</text>
+  <text x="76.0" y="656" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">partner_car_id is locked in the sale /</text>
+  <text x="76.0" y="672" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">done / cancel states via</text>
+  <text x="76.0" y="688" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">READONLY_FIELD_STATES, so the car cannot</text>
+  <text x="76.0" y="704" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">drift after the work starts.</text>
+  <rect x="434.0" y="606" width="358.0" height="118" rx="10" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="450.0" y="634" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="13" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Two-way domain</text>
+  <text x="450.0" y="656" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">Picking a car sets the customer; picking a</text>
+  <text x="450.0" y="672" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">customer narrows the car list to that</text>
+  <text x="450.0" y="688" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">customer&#x27;s fleet.</text>
+  <rect x="808.0" y="606" width="358.0" height="118" rx="10" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="824.0" y="634" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="13" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Unique, clean plates</text>
+  <text x="824.0" y="656" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">Plates are upper-cased and space-stripped</text>
+  <text x="824.0" y="672" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">on input and rejected if they already</text>
+  <text x="824.0" y="688" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">exist.</text>
+  <rect x="1182.0" y="606" width="358.0" height="118" rx="10" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="1198.0" y="634" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="13" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">History preserved</text>
+  <text x="1198.0" y="656" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">The superseded single-mechanic field stays</text>
+  <text x="1198.0" y="672" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">readable on old records instead of being</text>
+  <text x="1198.0" y="688" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">dropped.</text>
+  <rect x="60" y="748" width="1480" height="100" rx="10" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="76" y="774" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#10b981" font-weight="400" text-anchor="start" opacity="1.0" letter-spacing="1.4">WHY EXTEND INSTEAD OF BUILD SEPARATELY</text>
+  <text x="76" y="800" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="12.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">Everything above is an override of an existing Odoo hook — no parallel service, no shadow tables, no second source of truth.</text>
+  <text x="76" y="822" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="12.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">That was the constraint the project was designed around: the system had to stay maintainable by whoever took it over, using stock Odoo knowledge and nothing else.</text>
+</svg>

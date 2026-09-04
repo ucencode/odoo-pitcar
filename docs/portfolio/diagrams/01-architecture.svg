@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6"
+            markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrow_dim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6"
+            markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#768393"/>
+    </marker>
+    <marker id="arrow_info" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6"
+            markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5b9dd9"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#0b0e13"/>
+  <text x="60" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="30" fill="#e8ebee" font-weight="700" text-anchor="start" opacity="1.0">Pitcar Service Management System — Architecture</text>
+  <text x="60" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="15" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">A single Odoo 16 addon layered over the standard sale / stock / account / project modules. No forks, no parallel services.</text>
+  <text x="60" y="136" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#10b981" font-weight="400" text-anchor="start" opacity="1.0" letter-spacing="1.4">USERS · ONE ODOO INSTANCE, ROLE-SCOPED MENUS</text>
+  <rect x="60.0" y="150" width="358.0" height="68" rx="10" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="76.0" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Service Advisor</text>
+  <text x="76.0" y="199" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">intake, quotation, feedback, follow-up</text>
+  <rect x="434.0" y="150" width="358.0" height="68" rx="10" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="450.0" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Mechanic Team</text>
+  <text x="450.0" y="199" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">assigned per order, tracked on the work order</text>
+  <rect x="808.0" y="150" width="358.0" height="68" rx="10" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="824.0" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Finance / Cashier</text>
+  <text x="824.0" y="199" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">invoicing, car data carried onto the invoice</text>
+  <rect x="1182.0" y="150" width="358.0" height="68" rx="10" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="1198.0" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Leadership</text>
+  <text x="1198.0" y="199" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">filters &amp; group-by across cars, brands, mechanics</text>
+  <path d="M 239.0 220 L 239.0 250" stroke="#768393" stroke-width="1.3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 613.0 220 L 613.0 250" stroke="#768393" stroke-width="1.3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 987.0 220 L 987.0 250" stroke="#768393" stroke-width="1.3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 1361.0 220 L 1361.0 250" stroke="#768393" stroke-width="1.3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="60" y="254" width="1480" height="62" rx="14" fill="#1d212a" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="80" y="291" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Odoo 16 · web client + ORM + QWeb reporting engine</text>
+  <text x="1520" y="291" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#768393" font-weight="400" text-anchor="end" opacity="1.0">python 3 · werkzeug</text>
+  <path d="M 800.0 318 L 800.0 352" stroke="#10b981" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+  <rect x="60" y="356" width="1480" height="292" rx="14" fill="#0f1a17" stroke="#10b981" stroke-width="1" opacity="1.0" stroke-dasharray="6 5"/>
+  <text x="80" y="384" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#10b981" font-weight="400" text-anchor="start" opacity="1.0" letter-spacing="1.4">PITCAR_CUSTOM  ·  V16.0.12  ·  THE ADDON IN THIS REPO</text>
+  <text x="1520" y="384" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#768393" font-weight="400" text-anchor="end" opacity="1.0">~990 LOC python · 15 view files · LGPL-3</text>
+  <rect x="80.0" y="400" width="348.0" height="230" rx="10" fill="#14171f" stroke="#10b981" stroke-width="1" opacity="1.0"/>
+  <rect x="80.0" y="400" width="4" height="230" rx="2" fill="#10b981"/>
+  <text x="96.0" y="425" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">New models</text>
+  <text x="96.0" y="448" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">res.partner.car</text>
+  <text x="96.0" y="465.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">res.partner.car.brand</text>
+  <text x="96.0" y="483.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">res.partner.car.type</text>
+  <text x="96.0" y="500.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">res.partner.car.transmission</text>
+  <text x="96.0" y="518.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">res.partner.source</text>
+  <text x="96.0" y="535.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">pitcar.mechanic[.new]</text>
+  <text x="96.0" y="553.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">pitcar.service.advisor</text>
+  <text x="96.0" y="570.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">feedback.classification</text>
+  <rect x="444.0" y="400" width="348.0" height="230" rx="10" fill="#14171f" stroke="#10b981" stroke-width="1" opacity="1.0"/>
+  <rect x="444.0" y="400" width="4" height="230" rx="2" fill="#10b981"/>
+  <text x="460.0" y="425" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Extended models</text>
+  <text x="460.0" y="448" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">sale.order      +56 fields</text>
+  <text x="460.0" y="465.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">account.move</text>
+  <text x="460.0" y="483.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">stock.picking</text>
+  <text x="460.0" y="500.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">res.partner</text>
+  <text x="460.0" y="518.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">res.partner.category</text>
+  <text x="460.0" y="535.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">project.task</text>
+  <text x="460.0" y="553.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">product.product / .tag</text>
+  <text x="460.0" y="570.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">crm.tag</text>
+  <rect x="808.0" y="400" width="348.0" height="230" rx="10" fill="#14171f" stroke="#10b981" stroke-width="1" opacity="1.0"/>
+  <rect x="808.0" y="400" width="4" height="230" rx="2" fill="#10b981"/>
+  <text x="824.0" y="425" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Views &amp; navigation</text>
+  <text x="824.0" y="448" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">tree / form / kanban</text>
+  <text x="824.0" y="465.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">search filters + group-by</text>
+  <text x="824.0" y="483.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">saved &#x27;reminder due today&#x27;</text>
+  <text x="824.0" y="500.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">  filters on sale.order</text>
+  <text x="824.0" y="518.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">Sales &gt; Car Management</text>
+  <text x="824.0" y="535.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">Sales &gt; Mechanic Teams</text>
+  <text x="824.0" y="553.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">Sales &gt; Service Advisors</text>
+  <text x="824.0" y="570.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">Customer Cars menu</text>
+  <rect x="1172.0" y="400" width="348.0" height="230" rx="10" fill="#14171f" stroke="#10b981" stroke-width="1" opacity="1.0"/>
+  <rect x="1172.0" y="400" width="4" height="230" rx="2" fill="#10b981"/>
+  <text x="1188.0" y="425" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">Reports &amp; access</text>
+  <text x="1188.0" y="448" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">QWeb PDF: Work Order</text>
+  <text x="1188.0" y="465.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">  (bound to sale.order)</text>
+  <text x="1188.0" y="483.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">customised invoice layout</text>
+  <text x="1188.0" y="500.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">  w/ car + mechanic block</text>
+  <text x="1188.0" y="518.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">ir.model.access.csv</text>
+  <text x="1188.0" y="535.5" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">  9 ACL rows, base.group_user</text>
+  <text x="1188.0" y="553.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">seed data: partners, cars</text>
+  <path d="M 800.0 650 L 800.0 684" stroke="#10b981" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
+  <text x="60" y="706" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" fill="#10b981" font-weight="400" text-anchor="start" opacity="1.0" letter-spacing="1.4">ODOO CORE MODULES DECLARED IN __MANIFEST__ DEPENDS</text>
+  <rect x="60.0" y="718" width="155.55555555555554" height="46" rx="8" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="137.77777777777777" y="746" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#e8ebee" font-weight="400" text-anchor="middle" opacity="1.0">base</text>
+  <rect x="225.55555555555554" y="718" width="155.55555555555554" height="46" rx="8" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="303.3333333333333" y="746" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#e8ebee" font-weight="400" text-anchor="middle" opacity="1.0">sale</text>
+  <rect x="391.1111111111111" y="718" width="155.55555555555554" height="46" rx="8" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="468.88888888888886" y="746" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#e8ebee" font-weight="400" text-anchor="middle" opacity="1.0">sale_management</text>
+  <rect x="556.6666666666666" y="718" width="155.55555555555554" height="46" rx="8" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="634.4444444444443" y="746" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#e8ebee" font-weight="400" text-anchor="middle" opacity="1.0">sale_stock</text>
+  <rect x="722.2222222222222" y="718" width="155.55555555555554" height="46" rx="8" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="800.0" y="746" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#e8ebee" font-weight="400" text-anchor="middle" opacity="1.0">stock</text>
+  <rect x="887.7777777777777" y="718" width="155.55555555555554" height="46" rx="8" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="965.5555555555554" y="746" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#e8ebee" font-weight="400" text-anchor="middle" opacity="1.0">account</text>
+  <rect x="1053.3333333333333" y="718" width="155.55555555555554" height="46" rx="8" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="1131.111111111111" y="746" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#e8ebee" font-weight="400" text-anchor="middle" opacity="1.0">crm</text>
+  <rect x="1218.8888888888887" y="718" width="155.55555555555554" height="46" rx="8" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="1296.6666666666665" y="746" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#e8ebee" font-weight="400" text-anchor="middle" opacity="1.0">purchase</text>
+  <rect x="1384.4444444444443" y="718" width="155.55555555555554" height="46" rx="8" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="1462.2222222222222" y="746" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#e8ebee" font-weight="400" text-anchor="middle" opacity="1.0">project</text>
+  <path d="M 800.0 766 L 800.0 796" stroke="#768393" stroke-width="1.3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="60" y="800" width="1480" height="56" rx="14" fill="#14171f" stroke="#2a2f3a" stroke-width="1" opacity="1.0"/>
+  <text x="80" y="834" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif" font-size="14" fill="#e8ebee" font-weight="600" text-anchor="start" opacity="1.0">PostgreSQL</text>
+  <text x="190" y="834" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#768393" font-weight="400" text-anchor="start" opacity="1.0">stored computed fields · trigram indexes on plate &amp; car name · SQL uniqueness on mechanic name</text>
+</svg>
