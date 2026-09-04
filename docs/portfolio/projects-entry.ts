@@ -21,7 +21,7 @@
   id: "pitcar",
   title: "Pitcar Service Management System",
   description:
-    "An Odoo 16 ERP implementation for a car workshop in Purwokerto that grew from pandemic-era mobile home service into a 400+ unit/month operation. A custom addon turns a generic sales order into a service order — one record carrying the car, mechanic team, service advisor, invoice and post-service follow-up from the moment the car rolls in.",
+    "I introduced Odoo to a car workshop that had grown out of pandemic-era mobile home service, then built the addon that turns a generic sales order into a service order — one record carrying the car, mechanic team, service advisor, invoice and post-service follow-up from the moment the car rolls in. Built deliberately to be inherited, and then handed over to the full-time engineer I recommended they hire.",
   image: {
     src: "/projects/pitcar-preview.webp",
     alt: "Pitcar project preview",
@@ -69,15 +69,16 @@
         "The business scales on the car, not the counter — it began as mobile home service, so the same vehicle comes back, gets collected, and is due again at intervals. Odoo models customers, products and orders, but not the car, so service history for a returning customer was guesswork.",
         "The car, odometer, assigned mechanics and service advisor had to be re-typed on the quotation, the parts picking, the work order and the invoice — four chances for the same visit to disagree with itself.",
         "Follow-up was not data. Whether a customer was called, reminded at the 3- and 6-month service intervals, or rebooked could not be measured — for a shop running on 350+ repeat customers, the most valuable information in the building.",
-        "It had to be handed over and replicated. There was no permanent in-house engineering team, and the business was heading toward a franchise model where the operational system is part of what a new outlet buys — so anything exotic would have been a liability.",
+        "And the constraint that mattered most was about me, not them: I was working on an uncommitted footing. A shop running its daily operations on my code deserved software that would outlive my availability, so the system had to be one a different engineer could pick up cold.",
       ],
     },
     {
       title: "My Role",
       bullets: [
-        "Odoo / backend developer — designed and built the custom addon and maintained it in production for around 11 months, authoring the large majority of the repository's commits.",
-        "Worked with a second engineer through a PR review flow, shipping small reviewable changes against a live system rather than big-bang releases.",
-        "Owned the domain modelling, the workflow extensions, the shop-floor PDF reports, and the handover state of the codebase at ownership transfer.",
+        "Made the platform call. The client came with an operations problem, not an ERP to implement — choosing to customise Odoo rather than write a bespoke workshop app was my decision, and the one the whole project rests on. It left them with a system any Odoo developer on the market can maintain.",
+        "Designed and built the custom addon solo and maintained it in production for around 11 months, authoring the large majority of the repository's commits.",
+        "Shipped small reviewable changes against a live system rather than big-bang releases — the shop had cars in the bay throughout.",
+        "Engineered my own replacement. Working on an uncommitted footing was a risk to the client, so I told them to hire a permanent engineer, onboarded the person they hired through PR review until they were the one merging, and closed out my involvement deliberately.",
       ],
     },
     {
@@ -96,9 +97,9 @@
         "Replaced fragmented operational tooling with one Odoo instance covering sales, service, inventory, invoicing and customer management.",
         "Made service history queryable — every visit attached to a specific car, with mechanic team, advisor, odometer and outcome attached to it.",
         "Turned follow-up into data: contact, response and rebooking rates at 3 days, 3 months and 6 months became ordinary group-by queries instead of an off-system process.",
-        "Supported operations at roughly 400–450 service units per month against a base of 350+ regular customers.",
-        "The ERP layer this work established is now part of how the company publicly positions itself — cited alongside dealer-standard operations as what separates it from the 2021 home-service original — and the computerised operational system forms part of what franchise partners buy.",
-        "The 'must be handed over, must be replicable' constraint proved to be the right thing to optimise for: every customisation is a standard Odoo override, readable by any Odoo developer without tribal knowledge, and the system outlived my involvement.",
+        "Ran real operations from first production deployment onward, handling hundreds of service orders per month.",
+        "Handed over cleanly — the client hired a permanent engineer on my recommendation, I onboarded them, and the system carried on without me. Every customisation is a standard Odoo override, readable without tribal knowledge.",
+        "Two years on, the ERP layer this work established is part of how the company publicly positions itself, and the computerised operational system forms part of what franchise partners buy. The business now reports 400–450 units a month against 350+ regular customers — figures that post-date my involvement, and the return on having built something inheritable.",
       ],
     },
   ],

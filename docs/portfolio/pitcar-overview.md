@@ -41,15 +41,14 @@ management system. The operational picture had to stop being split across parts
 stock, service history, transactions, mechanic assignment and follow-up, and
 start being one queryable thing.
 
-Two constraints came with that:
+One constraint dominated everything, and it was about me rather than about them:
 
-- **It had to be handed over.** There was no plan to keep a permanent in-house
-  engineering team, so anything exotic would have been a liability. Every
-  technical decision below is downstream of that.
-- **It had to be replicable.** The business was heading toward a franchise
-  model, where the operational system is part of what a new outlet buys. A
-  system that only works because the person who built it is available is not a
-  system you can franchise.
+**I was not a permanent fixture, and the system could not depend on my being
+one.** I was working with Pitcar on an uncommitted footing. A business running
+its daily operations on software has a right to expect that software to outlive
+whoever wrote it — so from the first design decision, the target was a system a
+different engineer could pick up cold. Every technical choice below is downstream
+of that, and so is how the engagement ended.
 
 ## Problem
 
@@ -75,18 +74,37 @@ Two constraints came with that:
 
 ## My role
 
-Backend / Odoo developer. I designed and built the `pitcar_custom` addon and
-maintained it in production over roughly eleven months (Nov 2023 – Oct 2024),
-authoring 49 of the repository's 61 commits and working with a second engineer
-who reviewed and merged the later maintenance PRs. Both of us are listed as
-maintainers in the module manifest. The repository here is my archived snapshot
-taken at the point of ownership transfer; the live repository moved to the
-client's side afterwards.
+**I brought Odoo to Pitcar.** They did not come to me with an ERP to implement —
+they came with an operations problem. Choosing an established ERP platform and
+customising it, rather than writing a bespoke workshop application, was my call,
+and it is the decision the entire project rests on. A custom app would have been
+more fun to build and would have left the client stranded the moment I stopped
+answering messages. An Odoo addon leaves them with a system any Odoo developer in
+the market can maintain.
 
-Practically, that meant: modelling the domain, extending the standard Odoo sale
-/ stock / account / project flows in place, building the views and PDF reports
-the shop floor actually used, and shipping small, reviewable changes against a
-running production system.
+From there I designed and built the `pitcar_custom` addon and maintained it in
+production for roughly eleven months (Nov 2023 – Oct 2024), authoring 49 of the
+repository's 61 commits: modelling the domain, extending the standard sale /
+stock / account / project flows in place, building the views and PDF reports the
+shop floor actually used, and shipping small reviewable changes against a running
+production system.
+
+### Handover by design
+
+The part of this project I am most willing to be judged on is how it ended.
+
+My engagement was uncommitted, and a workshop running its daily operations on my
+code deserved better than that. So rather than letting it drift, I told the
+client to hire a full-time engineer, and I stayed long enough to onboard the
+person they hired — working through PR review with them until they were the one
+merging changes, then closing out my involvement deliberately at the point of
+ownership transfer.
+
+That is the reason the technical decisions in this write-up look conservative.
+The addon is boring on purpose: standard hooks, standard models, no cleverness
+that needs explaining. It was built to be inherited, and then it actually was.
+The repository here is my archived snapshot from that transfer; active
+development continued on the client's side afterwards.
 
 ## What I built
 
@@ -184,11 +202,21 @@ order total, and compute a deadline duration for the kanban board.
 
 ## Engineering decisions worth defending
 
+**Buy the platform, build the domain.** The first decision was not to write a
+workshop application. Odoo already had the sale / stock / account / project
+machinery; what it lacked was the car. Picking the platform meant the client
+inherited a hiring market — any Odoo developer can maintain this — instead of
+inheriting a codebase only its author understood.
+
 **Extend, don't rebuild.** Every behaviour above is an override of an existing
 Odoo hook or an added field on an existing model. There is no parallel service,
 no shadow table, no second source of truth. A maintainer with ordinary Odoo
 knowledge can read the addon and understand it — which was the actual
-requirement, since the system had to survive the handover.
+requirement, since the system had to survive my leaving.
+
+**Optimise for the engineer who is not you.** Boring is a feature when you know
+you are temporary. Every place I could have been clever, the question was whether
+the person inheriting this would thank me for it. Mostly the answer was no.
 
 **Denormalise where reads dominate.** Car attributes are stored related fields.
 It costs write-time recomputation and buys cheap filtering, grouping and
@@ -220,23 +248,30 @@ views need to sort on it.
   3 days, 3 months and 6 months became ordinary group-by queries on
   `sale.order` instead of an off-system process — directly serving the repeat
   customer base the business runs on.
-- Supported operations at roughly 400–450 service units per month against 350+
-  regular customers.
+- Ran real operations from first production deployment onward, handling hundreds
+  of service orders per month.
 - Shipped continuously against production for eleven months in small reviewed
-  increments, then handed the system over — running and maintainable by an
-  external maintainer — at the point of ownership transfer.
+  increments — no big-bang releases against a shop that had cars in the bay.
+- Handed over cleanly: the client hired a permanent engineer on my
+  recommendation, I onboarded them through PR review, and the system carried on
+  without me.
 
-**Where it ended up.** The ERP-based management system is now part of how Pitcar
-publicly positions itself — its "about" page cites it alongside dealer-standard
-operations as what separates the current business from the 2021 home-service
-original — and the franchise programme sells the computerised operational system
-as part of what a new outlet gets. The "must be handed over, must be replicable"
-constraint turned out to be the right thing to have optimised for: the system
-outlived my involvement and became an asset the business could sell.
+**Where it ended up.** Two years on, the ERP-based management system is part of
+how Pitcar publicly positions itself — its "about" page cites it alongside
+dealer-standard operations as what separates the current business from the 2021
+home-service original — and the franchise programme sells the computerised
+operational system as part of what a new outlet gets. The business now reports
+400–450 units a month against 350+ regular customers.
 
-*Scope note: my contribution ended at the ownership transfer in October 2024.
-The system as marketed today reflects continued development after that point by
-the client's side; what I can speak to is the foundation in this repository.*
+That is the return on building something boring. The system was designed to be
+inheritable, it was inherited, and it kept compounding after the person who wrote
+it stopped touching it.
+
+*Scope note: my contribution ends at the ownership transfer in October 2024.
+The current figures and the franchise programme post-date my involvement and
+reflect continued development on the client's side. What I can speak to
+directly is the foundation in this repository and the volume it carried while I
+was running it.*
 
 ## Stack
 

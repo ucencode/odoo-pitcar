@@ -44,16 +44,23 @@ them in one place and re-run.
 bindings, ACL rows, dependencies, timeline — are checkable against
 `pitcar_custom/` and `git log` in this repository.
 
-**Business claims** — the 2021 home-service origin, service mix, 400–450 units
-per month, 350+ regular customers, the ERP as public positioning, and the
+**First-hand claims** — introducing Odoo as the platform choice, building and
+maintaining the addon, the system carrying hundreds of service orders per month
+from first production deployment, recommending the full-time hire and onboarding
+the successor — are Ahmad's own account of the engagement.
+
+**Client marketing claims** — the 2021 home-service origin, service mix, 400–450
+units per month, 350+ regular customers, the ERP as public positioning, and the
 franchise programme — come from the client's own public site
 ([tentang](https://pitcar.co.id/tentang/), [layanan](https://pitcar.co.id/layanan/),
 [kemitraan](https://pitcar.co.id/kemitraan/),
-[franchise.pitcar.co.id](https://franchise.pitcar.co.id/)). They are the
-client's marketing claims, cited as context — not measurements taken from the
-system, and not evidence that a given number was caused by this code.
+[franchise.pitcar.co.id](https://franchise.pitcar.co.id/)). Cited as context —
+not measurements taken from the system, and not evidence that a given number was
+caused by this code.
 
 **Scope boundary.** The contribution in this repository ends at the ownership
-transfer in October 2024. The system as marketed today reflects continued
-development after that point on the client's side. The write-up says so
-explicitly; keep that line if you trim elsewhere.
+transfer in October 2024. The current figures and the franchise programme
+post-date that. The write-up keeps these separate deliberately — the volume
+claim made in Ahmad's own voice is "hundreds of service orders per month from
+first deployment"; the 400–450 figure is attributed to the business, present
+tense. Don't collapse the two.

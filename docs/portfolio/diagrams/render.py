@@ -247,10 +247,10 @@ def diagram_architecture():
 
     # operating context
     b.append(text(x0, 876,
-                  "Operating context — car workshop in Purwokerto, Central Java. "
-                  "Grew from pandemic-era mobile home service (2021) into a fixed "
-                  "shop running ~400–450 service units/month for 350+ regular "
-                  "customers.",
+                  "Operating context — car workshop in Purwokerto, Central Java, "
+                  "grown out of pandemic-era mobile home service (2021). Platform "
+                  "choice was mine; the system has run production service "
+                  "operations at hundreds of orders per month since first deployment.",
                   size=11.5, fill=MUTED, opacity=0.85))
 
     return W, H, svg(W, H, b,
